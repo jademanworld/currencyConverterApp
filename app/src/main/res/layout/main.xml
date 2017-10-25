@@ -1,11 +1,154 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:background="#ECEFF1"
+	android:layout_marginTop="2dp">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+	<RelativeLayout
+		android:id="@+id/mrl"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:id="@+id/mll"
+			android:layout_centerInParent="true"
+			android:background="@drawable/rllay">
+
+			<ImageView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:src="@drawable/bitcoin"
+				android:adjustViewBounds="true"
+				android:onClick="load"
+				android:layout_marginLeft="10dp"/>
+
+			<ImageView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:src="@drawable/etherum"
+				android:onClick="load"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="10dp"/>
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical">
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:id="@+id/mllcopy"
+			android:background="@drawable/rllay">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:text="BITCOIN"
+				android:layout_alignParentLeft="true"
+				android:layout_marginLeft="10dp"
+				android:typeface="serif"
+				android:textColor="#ECEFF1"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:text="ETHERUM"
+				android:layout_gravity="center_horizontal"
+				android:gravity="center"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="10dp"
+				android:typeface="serif"
+				android:textColor="#000000"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:id="@+id/arrowLay"
+			android:background="#ECEFF1">
+
+			<ImageView
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:src="@drawable/arrowdown"
+				android:adjustViewBounds="true"
+				android:onClick="load"
+				android:layout_alignParentLeft="true"
+				android:layout_marginLeft="10dp"/>
+
+			<ImageView
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:src="@drawable/arrowdown"
+				android:onClick="load"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="10dp"/>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="2dp"
+		android:background="@drawable/listbg">
+
+		<android.support.v7.widget.CardView
+			xmlns:cardview="http://schemas.android.com/apk/res-auto"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/cdv0"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			cardview:cardCornerRadius="0dp"
+			app:cardBackgroundColor="#ECEFF1"
+			android:layout_marginLeft="0dp">
+
+			<ListView
+				android:id="@+id/lid"
+				android:background="@drawable/listbg"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"/>
+
+		</android.support.v7.widget.CardView>
+
+		<android.support.v7.widget.CardView
+			xmlns:cardview="http://schemas.android.com/apk/res-auto"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/cdv"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			cardview:cardCornerRadius="0dp"
+			app:cardBackgroundColor="#ECEFF1"
+			android:layout_marginLeft="0dp"
+			android:layout_marginRight="0dp">
+
+			<ListView
+				android:id="@+id/lst"
+				android:background="@drawable/listbg"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"/>
+
+		</android.support.v7.widget.CardView>
+
+	</LinearLayout>
 
 </LinearLayout>
+

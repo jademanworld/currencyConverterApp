@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/conversionlayoutLinearLayout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_marginLeft="2dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp"
+		android:layout_marginRight="10dp">
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:inputType="numberDecimal"
+			android:layout_width="0dp"
+			android:ems="10"
+			android:id="@+id/cryptocurrency"
+			android:hint="CryptoCurrency Value"
+			android:textColorHint="#000000"
+			android:layout_weight="2"
+			android:textColor="#000000"
+			android:typeface="monospace"/>
+
+		<ImageView
+			android:id="@+id/cryptoimage"
+			android:layout_height="30dp"
+			android:layout_width="40dp"
+			android:src="@drawable/bitcoin"
+			android:layout_marginTop="10dp"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_marginRight="10dp"
+		android:layout_marginLeft="2dp">
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:inputType="numberDecimal"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:ems="10"
+			android:layout_marginBottom="10dp"
+			android:id="@+id/fxcurrency"
+			android:hint="FX Currency Value"
+			android:textColorHint="#000000"
+			android:typeface="monospace"
+			android:textColor="#000000"
+			android:gravity="right"/>
+
+		<ImageView
+			android:id="@+id/fximage"
+			android:layout_height="30dp"
+			android:layout_width="40dp"
+			android:src="@drawable/eur1"
+			android:layout_marginTop="10dp"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:text="0.00"
+		android:layout_marginLeft="1dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginRight="1dp"
+		android:layout_marginBottom="10dp"
+		android:gravity="center_horizontal"
+		android:id="@+id/result"
+		android:typeface="monospace"
+		android:textStyle="bold"
+		android:textIsSelectable="true"/>
+
+</LinearLayout>
+
