@@ -7,7 +7,7 @@ APP SCREENSHOTS
 
 ![alt tag](https://github.com/rafmme/currencyConverterApp/blob/master/Screenshot_2017-12-06-15-41-37.png "App Screenshot 2")
 
-![alt tag](https://github.com/rafmme/currencyConverterApp/blob/master/Screenshot_2017-12-06-15-41-56.png "App Screenshot "3)
+![alt tag](https://github.com/rafmme/currencyConverterApp/blob/master/Screenshot_2017-12-06-15-41-56.png "App Screenshot 3")
 
 ![alt tag](https://github.com/rafmme/currencyConverterApp/blob/master/Screenshot_2017-12-06-15-42-28.png "App Screenshot 4")
 
